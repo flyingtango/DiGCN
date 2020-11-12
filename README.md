@@ -1,5 +1,7 @@
 # Digraph Inception Convolutional Networks
+
 **[Paper](https://papers.nips.cc/paper/2020/file/cffb6e2288a630c2a787a64ccc67097c-Paper.pdf)** | **[Poster](https://github.com/flyingtango/DiGCN/blob/main/docs/digcn_poster.pdf)** 
+
 This repository is the official PyTorch implementation of [Digraph Inception Convolutional Networks](https://papers.nips.cc/paper/2020/file/cffb6e2288a630c2a787a64ccc67097c-Paper.pdf), where we make GCNs available in digraphs (directed graphs) and propose an Inception network to learn multi-scale features in digraphs.
 
 
@@ -56,6 +58,7 @@ pip install -e .
 cd code
 python gcn.py --gpu-no 0 --dataset cora_ml
 python digcn.py --gpu-no 0 --dataset cora_ml
+python digcn_ib.py --gpu-no 0 --dataset cora_ml
 ```
 
 ## Results
@@ -69,7 +72,5 @@ DiGCN is released under the MIT License. See the LICENSE file for more details.
 ## Acknowledgements
 
 The template is borrowed from Pytorch-Geometric benchmark suite. We thank the authors of following works for opening source their excellent codes.
-[Pytorch-Geometric](https://github.com/rusty1s/pytorch_geometric)
-[Graph2Gauss](https://github.com/abojchevski/graph2gauss)
-[GNN-benchmark](https://github.com/shchur/gnn-benchmark)
+[Pytorch-Geometric](https://github.com/rusty1s/pytorch_geometric),[Graph2Gauss](https://github.com/abojchevski/graph2gauss),[GNN-benchmark](https://github.com/shchur/gnn-benchmark)
 
