@@ -1,6 +1,6 @@
 # Digraph Inception Convolutional Networks
 
-**[Paper](https://papers.nips.cc/paper/2020/file/cffb6e2288a630c2a787a64ccc67097c-Paper.pdf)** | **[Poster](https://github.com/flyingtango/DiGCN/blob/main/docs/digcn_poster.pdf)** 
+**[Paper](https://papers.nips.cc/paper/2020/file/cffb6e2288a630c2a787a64ccc67097c-Paper.pdf)** | **[Poster](https://github.com/flyingtango/DiGCN/blob/main/docs/digcn_poster.pdf)** | **[Supplementary](https://github.com/flyingtango/DiGCN/blob/main/docs/digcn_supp.pdf)** 
 
 This repository is the official PyTorch implementation of [Digraph Inception Convolutional Networks](https://papers.nips.cc/paper/2020/file/cffb6e2288a630c2a787a64ccc67097c-Paper.pdf), where we make GCNs available in digraphs (directed graphs) and propose an Inception network to learn multi-scale features in digraphs.
 

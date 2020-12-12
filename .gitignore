@@ -6,4 +6,4 @@
 *.egg-info
 .idea/
 dist
-
+.gitignore
