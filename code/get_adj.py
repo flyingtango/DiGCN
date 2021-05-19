@@ -31,9 +31,12 @@ def get_undirected_adj(edge_index, num_nodes, dtype):
     return edge_index, deg_inv_sqrt[row] * edge_weight * deg_inv_sqrt[col]
 
 
-def get_pr_directed_adj(alpha, edge_index, num_nodes, dtype):
-    edge_weight = torch.ones((edge_index.size(1), ), dtype=dtype,
+def get_pr_directed_adj(alpha, edge_index, num_nodes, dtype, edge_weight = None):
+    if edge_weight is None:
+        edge_weight = torch.ones((edge_index.size(1), ), dtype=dtype,
                                      device=edge_index.device)
+    else:
+        edge_weight = torch.FloatTensor(edge_weight).to(edge_index.device)
     fill_value = 1
     edge_index, edge_weight = add_self_loops(
         edge_index, edge_weight, fill_value, num_nodes)  
